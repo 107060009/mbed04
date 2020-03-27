@@ -46,26 +46,35 @@ int main()
 
     uLCD.printf("\n107060009\n");
 
+    uLCD.color(RED);
+
+    int j = 30;
+    
+    uLCD.locate(1,2);
+    
+    uLCD.printf("%2D",j);    
+    
+    uLCD.color(RED);
+          
     for (int k=5; k>=0; --k) {
         
-        uLCD.color(BLUE);
+         uLCD.color(BLUE);
         
-        uLCD.locate(1,2);
+         uLCD.locate(2,2);
 
-        wait(.5);
+         wait(.5);
 
     }
 
     uLCD.background_color(0X00FF00);
-
     uLCD.cls();
 
-    for (int j=30; j>=0; --j) {
+    uLCD.color(RED);    
+    uLCD.printf("\n107060009\n");
 
-        uLCD.text_width(4);
-
-        uLCD.text_height(4);
-
+    
+    for (j=30; j>=0; --j) {
+    
         uLCD.color(RED);
         
         uLCD.locate(1,2);
